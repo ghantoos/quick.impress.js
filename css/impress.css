@@ -44,14 +44,6 @@ body {
 ol, ul {
     list-style: none;
 }
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
 
 table {
     border-collapse: collapse;
@@ -207,7 +199,7 @@ a:focus {
     font-size: 190px;
 }
 
-/* text position */
+/* text position/offset */
 .left {
   text-align: left;
 }
@@ -225,6 +217,21 @@ a:focus {
 .leftm3 {
   text-align: left;
   margin-left: 300px;
+}
+
+.leftm4 {
+  text-align: left;
+  margin-left: 400px;
+}
+
+.leftm5 {
+  text-align: left;
+  margin-left: 500px;
+}
+
+.leftm6 {
+  text-align: left;
+  margin-left: 600px;
 }
 
 .right {
@@ -246,29 +253,19 @@ a:focus {
   margin-right: 300px;
 }
 
-/* offset lines */
-.topleft {
-    position: absolute;
-    top: -0.5em;
-    left: 1.5em;
+.rightm4 {
+  text-align: right;
+  margin-right: 400px;
 }
 
-.topright {
-    position: absolute;
-    top: -0.5em;
-    right: 1.5em;
+.rightm5 {
+  text-align: right;
+  margin-right: 500px;
 }
 
-.botleft {
-    position: absolute;
-    bottom: -0.5em;
-    left: 1.5em;
-}
-
-.botright {
-    position: absolute;
-    bottom: -0.5em;
-    right: 1.5em;
+.rightm6 {
+  text-align: right;
+  margin-right: 600px;
 }
 
 /* motion speed */
@@ -348,6 +345,37 @@ a:focus {
     -ms-transform:     scale(0.7);
     -o-transform:      scale(0.7);
     transform:         scale(0.7);
+}
+
+.img {
+    max-width:100%; 
+    max-height:100%;
+    margin:auto;
+    display:block;
+}
+
+/* blockquotes */
+blockquote {
+    padding-top: 20px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 150%;
+    color: #454545;
+    font-style: italic;
+}
+
+blockquote:before {
+    display: block;
+    float: left;
+    margin: 10px 15px 0 0;
+    font-size: 100px; 
+    content: open-quote;
+    color: #bababa;
+    text-shadow: 0 1px 1px #909090;
+}
+
+blockquote:after {
+    content: none; 
 }
 
 /*
