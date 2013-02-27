@@ -149,7 +149,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 900px;
+    width: 1200px;
     padding: 40px;
     margin: 20px auto;
 
@@ -207,26 +207,65 @@ a:focus {
     font-size: 190px;
 }
 
+/* text position */
+.left {
+  text-align: left;
+}
+
+.leftm1 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.leftm2 {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.leftm3 {
+  text-align: left;
+  margin-left: 300px;
+}
+
+.right {
+  text-align: right;
+}
+
+.rightm1 {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.rightm2 {
+  text-align: right;
+  margin-right: 200px;
+}
+
+.rightm3 {
+  text-align: right;
+  margin-right: 300px;
+}
+
 /* offset lines */
-.lefttop {
+.topleft {
     position: absolute;
     top: -0.5em;
     left: 1.5em;
 }
 
-.righttop {
+.topright {
     position: absolute;
     top: -0.5em;
     right: 1.5em;
 }
 
-.leftbot {
+.botleft {
     position: absolute;
     bottom: -0.5em;
     left: 1.5em;
 }
 
-.rightbot {
+.botright {
     position: absolute;
     bottom: -0.5em;
     right: 1.5em;
