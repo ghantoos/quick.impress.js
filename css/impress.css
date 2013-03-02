@@ -141,7 +141,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 1200px;
+    width: 1024px;
     padding: 40px;
     margin: 20px auto;
 
@@ -189,6 +189,10 @@ a:focus {
 
 .small {
     font-size: 40px;
+}
+
+.midmed {
+    font-size: 60px;
 }
 
 .med {
